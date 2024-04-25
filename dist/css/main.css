@@ -269,6 +269,81 @@
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.contact {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../imgs/landing.jpg") center top;
+  background-size: cover;
+}
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.contact_list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+.contact .social-icons {
+  position: initial;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav_item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav_link {
+    font-size: 1.5rem;
+  }
+  .about_bio {
+    font-size: 1.5rem;
+  }
+  .projects_bio_image {
+    height: 40vh;
+  }
+  .projects_items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
+  }
+  .contact_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 991px) {
+  .projects_items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects_bio_image {
+    height: 50vh;
+  }
+}
 body {
   background: #272727;
   color: #fff;
